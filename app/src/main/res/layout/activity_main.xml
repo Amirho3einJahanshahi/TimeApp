@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".activities.MainActivity"
+                android:background="#3e3e3e"
+>
+
+    <TextView
+            android:id="@+id/date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date : "
+            android:layout_margin="8dp"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:gravity="center"
+    />
+
+    <TextView
+            android:id="@+id/start_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Time : "
+            android:layout_margin="8dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_below="@id/date_text"
+    />
+    <TextView
+            android:id="@+id/end_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Time : "
+            android:layout_margin="8dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_below="@id/start_time_text"
+    />
+    <EditText
+            android:id="@+id/desc_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/end_time_text"
+            android:layout_margin="8dp"
+            android:hint="Description"
+            android:maxLines="5"
+            android:lines="5"
+            android:padding="16dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:textCursorDrawable="@null"
+            android:backgroundTint="@color/colorPrimary"
+            android:visibility="gone"
+    />
+    <Button
+            android:id="@+id/button_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="8dp"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:visibility="visible"
+            android:textColor="#3e3e3e"
+            android:background="@drawable/home_item_bg"
+    />
+    <Button
+            android:id="@+id/button_stop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="8dp"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            android:textColor="#3e3e3e"
+            android:background="@drawable/home_item_bg"
+    />
+    <Button
+            android:id="@+id/button_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="8dp"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            android:textColor="#3e3e3e"
+            android:background="@drawable/home_item_bg"
+    />
+
+</RelativeLayout>
